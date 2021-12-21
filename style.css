@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7ecdf;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+::selection {
+  background-color: #0d184c;
+  color: #f7ecdf;
+}
+
+h1,
+h2,
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  color: #0d184c;
+  outline: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 550px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.logo {
+  width: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.btn {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.icon {
+  display: flex;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+.btn:hover {
+  background-color: #0d184c;
+  color: #f7ecdf;
+  outline: none;
+}
