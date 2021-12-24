@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #f7ecdf;
+  --color-secondary: #0d184c;
+}
+
 *,
 *::before,
 *::after {
@@ -15,14 +20,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f7ecdf;
-  height: 95vh;
+  background: var(--color-primary);
+  height: 100vh;
   padding: 0 2rem;
 }
 
 ::selection {
-  background-color: #0d184c;
-  color: #f7ecdf;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 h1,
@@ -32,7 +37,7 @@ a {
   margin: 0;
   padding: 0;
   line-height: 100%;
-  color: #0d184c;
+  color: var(--color-secondary);
   outline: none;
 }
 
@@ -115,7 +120,6 @@ i {
 }
 
 .btn:hover {
-  background-color: #0d184c;
-  color: #f7ecdf;
-  outline: none;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
